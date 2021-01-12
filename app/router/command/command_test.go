@@ -40,7 +40,7 @@ func TestServiceSubscribeRoutingStats(t *testing.T) {
 		{SourcePort: 9999, TargetPort: 9999, OutboundTag: "out"},
 		{Network: net.Network_UDP, OutboundGroupTags: []string{"outergroup", "innergroup"}, OutboundTag: "out"},
 		{Protocol: "bittorrent", OutboundTag: "blocked"},
-		{User: "example@v2fly.org", OutboundTag: "out"},
+		{User: "example@oceantide.org", OutboundTag: "out"},
 		{SourceIPs: [][]byte{{127, 0, 0, 1}}, Attributes: map[string]string{"attr": "value"}, OutboundTag: "out"},
 	}
 	errCh := make(chan error)
@@ -239,7 +239,7 @@ func TestSerivceTestRoute(t *testing.T) {
 				TargetTag:   &router.RoutingRule_Tag{Tag: "out"},
 			},
 			{
-				UserEmail: []string{"example@v2fly.org"},
+				UserEmail: []string{"example@oceantide.org"},
 				TargetTag: &router.RoutingRule_Tag{Tag: "out"},
 			},
 			{
@@ -279,7 +279,7 @@ func TestSerivceTestRoute(t *testing.T) {
 			{TargetDomain: "example.com", TargetPort: 443, OutboundTag: "out"},
 			{SourcePort: 9999, TargetPort: 9999, OutboundTag: "out"},
 			{Network: net.Network_UDP, Protocol: "bittorrent", OutboundTag: "blocked"},
-			{User: "example@v2fly.org", OutboundTag: "out"},
+			{User: "example@oceantide.org", OutboundTag: "out"},
 			{SourceIPs: [][]byte{{127, 0, 0, 1}}, Attributes: map[string]string{"attr": "value"}, OutboundTag: "out"},
 		}
 

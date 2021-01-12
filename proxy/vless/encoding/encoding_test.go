@@ -22,7 +22,7 @@ func toAccount(a *vless.Account) protocol.Account {
 func TestRequestSerialization(t *testing.T) {
 	user := &protocol.MemoryUser{
 		Level: 0,
-		Email: "test@v2fly.org",
+		Email: "test@oceantide.org",
 	}
 	id := uuid.New()
 	account := &vless.Account{
@@ -34,7 +34,7 @@ func TestRequestSerialization(t *testing.T) {
 		Version: Version,
 		User:    user,
 		Command: protocol.RequestCommandTCP,
-		Address: net.DomainAddress("www.v2fly.org"),
+		Address: net.DomainAddress("www.oceantide.org"),
 		Port:    net.Port(443),
 	}
 	expectedAddons := &Addons{}
@@ -59,7 +59,7 @@ func TestRequestSerialization(t *testing.T) {
 func TestInvalidRequest(t *testing.T) {
 	user := &protocol.MemoryUser{
 		Level: 0,
-		Email: "test@v2fly.org",
+		Email: "test@oceantide.org",
 	}
 	id := uuid.New()
 	account := &vless.Account{
@@ -71,7 +71,7 @@ func TestInvalidRequest(t *testing.T) {
 		Version: Version,
 		User:    user,
 		Command: protocol.RequestCommand(100),
-		Address: net.DomainAddress("www.v2fly.org"),
+		Address: net.DomainAddress("www.oceantide.org"),
 		Port:    net.Port(443),
 	}
 	expectedAddons := &Addons{}
@@ -91,7 +91,7 @@ func TestInvalidRequest(t *testing.T) {
 func TestMuxRequest(t *testing.T) {
 	user := &protocol.MemoryUser{
 		Level: 0,
-		Email: "test@v2fly.org",
+		Email: "test@oceantide.org",
 	}
 	id := uuid.New()
 	account := &vless.Account{

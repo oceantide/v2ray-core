@@ -32,7 +32,7 @@ func TestQuicConnection(t *testing.T) {
 			Certificate: []*tls.Certificate{
 				tls.ParseCertificate(
 					cert.MustGenerate(nil,
-						cert.DNSNames("www.v2fly.org"),
+						cert.DNSNames("www.oceantide.org"),
 					),
 				),
 			},
@@ -65,7 +65,7 @@ func TestQuicConnection(t *testing.T) {
 		ProtocolSettings: &quic.Config{},
 		SecurityType:     "tls",
 		SecuritySettings: &tls.Config{
-			ServerName:    "www.v2fly.org",
+			ServerName:    "www.oceantide.org",
 			AllowInsecure: true,
 		},
 	})

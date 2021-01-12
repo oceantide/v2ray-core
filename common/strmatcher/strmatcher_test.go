@@ -8,7 +8,7 @@ import (
 	. "v2ray.com/core/common/strmatcher"
 )
 
-// See https://github.com/v2fly/v2ray-core/issues/92#issuecomment-673238489
+// See https://github.com/oceantide/v2ray-core/issues/92#issuecomment-673238489
 func TestMatcherGroup(t *testing.T) {
 	rules := []struct {
 		Type   Type

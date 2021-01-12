@@ -70,7 +70,7 @@ func TestVLessInbound(t *testing.T) {
 					{
 						"id": "27848739-7e62-4138-9fd3-098a63964b6b",
 						"level": 0,
-						"email": "love@v2fly.org"
+						"email": "love@oceantide.org"
 					}
 				],
 				"decryption": "none",
@@ -97,7 +97,7 @@ func TestVLessInbound(t *testing.T) {
 							Id: "27848739-7e62-4138-9fd3-098a63964b6b",
 						}),
 						Level: 0,
-						Email: "love@v2fly.org",
+						Email: "love@oceantide.org",
 					},
 				},
 				Decryption: "none",

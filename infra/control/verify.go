@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/v2fly/VSign/signerVerify"
+	"github.com/oceantide/VSign/signerVerify"
 	"v2ray.com/core/common"
 )
 
@@ -49,7 +49,7 @@ func (c *VerifyCommand) Execute(args []string) error {
 
 	files := fs.Args()
 
-	err = signerVerify.OutputAndJudge(signerVerify.CheckSignaturesV2Fly(sigReader, files))
+	err = signerVerify.OutputAndJudge(signerVerify.CheckSignaturesoceantide(sigReader, files))
 
 	if err == nil {
 		return nil

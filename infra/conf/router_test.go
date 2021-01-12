@@ -40,7 +40,7 @@ func TestRouterConfig(t *testing.T) {
 						{
 							"type": "field",
 							"domains": [
-								"v2fly.org",
+								"oceantide.org",
 								"github.com"
 							],
 							"outboundTag": "direct"
@@ -99,7 +99,7 @@ func TestRouterConfig(t *testing.T) {
 						Domain: []*router.Domain{
 							{
 								Type:  router.Domain_Plain,
-								Value: "v2fly.org",
+								Value: "oceantide.org",
 							},
 							{
 								Type:  router.Domain_Plain,
@@ -171,7 +171,7 @@ func TestRouterConfig(t *testing.T) {
 						{
 							"type": "field",
 							"domains": [
-								"v2fly.org",
+								"oceantide.org",
 								"github.com"
 							],
 							"outboundTag": "direct"
@@ -210,7 +210,7 @@ func TestRouterConfig(t *testing.T) {
 						Domain: []*router.Domain{
 							{
 								Type:  router.Domain_Plain,
-								Value: "v2fly.org",
+								Value: "oceantide.org",
 							},
 							{
 								Type:  router.Domain_Plain,
@@ -258,7 +258,7 @@ func TestRouterConfig(t *testing.T) {
 					{
 						"type": "field",
 						"domains": [
-							"v2fly.org",
+							"oceantide.org",
 							"github.com"
 						],
 						"outboundTag": "direct"
@@ -296,7 +296,7 @@ func TestRouterConfig(t *testing.T) {
 						Domain: []*router.Domain{
 							{
 								Type:  router.Domain_Plain,
-								Value: "v2fly.org",
+								Value: "oceantide.org",
 							},
 							{
 								Type:  router.Domain_Plain,

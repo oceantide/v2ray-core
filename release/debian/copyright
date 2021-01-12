@@ -1,14 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: v2ray-core
-Upstream-Contact: https://github.com/v2fly/v2ray-core
-Source: https://github.com/v2fly/v2ray-core
+Upstream-Contact: https://github.com/oceantide/v2ray-core
+Source: https://github.com/oceantide/v2ray-core
 
 Files: *
-Copyright: 2015-2020 V2Fly Community
+Copyright: 2015-2020 oceantide Community
 License: Expat
 
 Files: release/config/geoip.dat
-Copyright: 2015-2020 V2Fly Community
+Copyright: 2015-2020 oceantide Community
 License: CC-BY-SA-4.0
 
 Files: release/debian/*

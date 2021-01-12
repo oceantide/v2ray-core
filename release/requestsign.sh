@@ -9,7 +9,7 @@ function uploadfile() {
   CTYPE=$(file -b --mime-type $FILE)
 
   sleep 1
-  curl -H "Authorization: token ${GITHUB_TOKEN}" -H "Content-Type: ${CTYPE}" --data-binary @$FILE "https://uploads.github.com/repos/v2fly/v2ray-core/releases/${RELEASE_ID}/assets?name=$(basename $FILE)"
+  curl -H "Authorization: token ${GITHUB_TOKEN}" -H "Content-Type: ${CTYPE}" --data-binary @$FILE "https://uploads.github.com/repos/oceantide/v2ray-core/releases/${RELEASE_ID}/assets?name=$(basename $FILE)"
   sleep 1
 }
 
@@ -24,5 +24,5 @@ function upload() {
   uploadfile $DGST
 }
 
-curl "https://raw.githubusercontent.com/v2fly/Release/master/v2fly/${SIGN_VERSION}.Release" > Release
+curl "https://raw.githubusercontent.com/oceantide/Release/master/oceantide/${SIGN_VERSION}.Release" > Release
 upload Release

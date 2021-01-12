@@ -20,7 +20,7 @@ import (
 var (
 	version  = "4.34.0"
 	build    = "Custom"
-	codename = "V2Fly, a community-driven edition of V2Ray."
+	codename = "oceantide, a community-driven edition of V2Ray."
 	intro    = "A unified platform for anti-censorship."
 )
 

@@ -18,8 +18,8 @@ cleanup() { rm -rf "$TMP"; }
 trap cleanup INT TERM ERR
 
 get_source() {
-	echo ">>> Clone v2fly/v2ray-core repo..."
-	git clone https://github.com/v2fly/v2ray-core.git
+	echo ">>> Clone oceantide/v2ray-core repo..."
+	git clone https://github.com/oceantide/v2ray-core.git
 	cd v2ray-core
 	go mod download
 }
@@ -47,10 +47,10 @@ build_v2() {
 
 build_dat() {
 	echo ">>> Download latest geoip..."
-	curl -s -L -o "$TMP"/geoip.dat "https://github.com/v2fly/geoip/raw/release/geoip.dat"
+	curl -s -L -o "$TMP"/geoip.dat "https://github.com/oceantide/geoip/raw/release/geoip.dat"
 
 	echo ">>> Download latest geosite..."
-	curl -s -L -o "$TMP"/geosite.dat "https://github.com/v2fly/domain-list-community/raw/release/dlc.dat"
+	curl -s -L -o "$TMP"/geosite.dat "https://github.com/oceantide/domain-list-community/raw/release/dlc.dat"
 }
 
 copyconf() {

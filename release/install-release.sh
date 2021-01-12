@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This file is accessible as https://install.direct/go.sh
-# Original source is located at github.com/v2fly/v2ray-core/release/install-release.sh
+# Original source is located at github.com/oceantide/v2ray-core/release/install-release.sh
 
 # If not specify, default meaning of return value:
 # 0: Success
@@ -17,6 +17,6 @@ colorEcho(){
 }
 
 colorEcho ${RED} "ERROR: This script has been DISCARDED, please switch to fhs-install-v2ray project."
-colorEcho ${YELLOW} "HOW TO USE: https://github.com/v2fly/fhs-install-v2ray"
-colorEcho ${YELLOW} "TO MIGRATE: https://github.com/v2fly/fhs-install-v2ray/wiki/Migrate-from-the-old-script-to-this"
+colorEcho ${YELLOW} "HOW TO USE: https://github.com/oceantide/fhs-install-v2ray"
+colorEcho ${YELLOW} "TO MIGRATE: https://github.com/oceantide/fhs-install-v2ray/wiki/Migrate-from-the-old-script-to-this"
 exit 255
